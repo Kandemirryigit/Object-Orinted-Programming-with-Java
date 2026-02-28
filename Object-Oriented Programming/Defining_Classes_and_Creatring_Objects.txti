@@ -1,0 +1,110 @@
+- Object-oriented programming (OOP) is a cornerstone of Java, allowing you to structure your code in a way that mirrors real-world entities
+
+
+
+
+
+class ClassName {
+    // Attributes (fields)
+    // Methods
+}
+
+class:
+-  This keyword is used to declare a class.
+
+ClassName:
+- This is the name of the class
+-  Class names should start with an uppercase letter and follow the camel case naming convention (e.g., MyClass, BankAccount).
+
+
+
+
+
+
+
+
+class Dog {
+    String breed;
+    int age;
+    String color;
+}
+
+
+- Let's consider a class called Dog
+- Some attributes of a Dog might be its breed, age, and color.
+- breed, age, and color are attributes of the Dog clas
+- String and int are the data types of the attributes.
+- Each Dog object will have its own set of values for these attributes.
+
+
+
+
+
+
+
+
+Access Modifiers:
+- Access modifiers control the visibility and accessibility of class members (attributes and methods)
+
+public:
+-  Accessible from anywhere.
+
+private:
+- Accessible only within the class
+
+protected:
+-  Accessible within the class, subclasses, and other classes in the same package.
+
+(default) 
+- If no access modifier is specified, it is package-private, meaning it is accessible within the same package.
+
+
+
+class Dog {
+    public String breed; // Accessible from anywhere
+    private int age; // Accessible only within the Dog class
+    String color; // Package-private (accessible within the same package)
+}
+
+
+
+
+Encapsulation:
+- It's generally considered good practice to make attributes private to enforce encapsulation, meaning the internal state of an object is hidden from the outside world.
+- This protects the data from being directly modified and allows you to control how it's accessed and modified through methods
+
+public class Car {
+    private String color;
+    private String model;
+    private int year;
+    private int currentSpeed;
+}
+
+- Now, color, model, year, and currentSpeed can only be accessed directly within the Car class
+
+
+
+
+
+
+
+
+
+Object Creation Syntax
+
+ClassName objectName = new ClassName();
+
+ClassName:
+- The name of the class you want to create an object of.
+
+objectName:
+-  The name you give to the object (variable)
+- Object names should start with a lowercase letter and follow the camel case naming convention (e.g., myDog, account).
+
+new:
+- The keyword used to create a new object in memory.
+
+ClassName():
+- This is the constructor of the class.
+- 
+

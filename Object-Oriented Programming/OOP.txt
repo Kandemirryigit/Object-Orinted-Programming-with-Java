@@ -1,0 +1,174 @@
+- Object-oriented programming (OOP) is a cornerstone of modern software development
+
+Class:
+- A class is a blueprint or a template for creating objects
+- It defines the characteristics (attributes) and behaviors (methods) that objects of that class will possess.
+- Think of a class as a cookie cutter and the objects as the cookies themselves.
+- The cookie cutter defines the shape, and each cookie is an instance of that shape.
+
+class Dog {
+    // Attributes (fields)
+    String breed;
+    String name;
+    int age;
+    // Methods (behaviors)
+    void bark() {
+        System.out.println("Woof!");
+    }
+    void displayDetails() {
+        System.out.println("Breed: " + breed + ", Name: " + name + ", Age: " + age);
+    }
+}
+
+
+class Dog
+- This declares a class named Dog
+- Class names in Java typically start with an uppercase letter.
+
+
+String breed;, String name;, int age;
+- These are the attributes or fields of the Dog class
+- They define the data that each Dog object will hold.
+
+
+void bark() { ... }, void displayDetails() 
+- These are the methods of the Dog class.
+- They define the actions that a Dog object can perform.
+
+
+
+
+
+
+
+
+
+
+
+
+Attributes (Fields)
+- Attributes, also known as fields or instance variables, represent the data associated with an object
+- They define the state of an object.
+- Each object of a class has its own copy of the attributes.
+
+Example:
+- In the Dog class, breed, name, and age are attributes
+- Each Dog object will have its own breed, name, and age.
+
+
+
+
+
+
+
+
+
+Methods (Behaviors)
+- Methods define the actions or behaviors that an object can perform.
+- They operate on the object's data (attributes) and can also interact with other objects
+
+Example: 
+- In the Dog class, bark() and displayDetails() are methods.
+- A Dog object can bark() and displayDetails() about itself
+
+
+
+
+
+
+
+
+Objects
+- An object is an instance of a class
+-  It is a concrete entity that exists in memory and has its own state (data) and behavior (methods).
+- Creating an object is also known as instantiation.
+
+Dog myDog = new Dog();
+
+
+Dog myDog
+- This declares a variable named myDog of type Dog
+- This variable will hold a reference to a Dog object.
+
+new Dog()
+- This creates a new Dog object in memory
+- The new keyword allocates memory for the object, and Dog() calls the constructor of the Dog class.
+
+
+
+
+
+
+
+
+
+
+Accessing Attributes and Methods
+- Once an object is created, you can access its attributes and methods using the dot operator (.
+
+myDog.breed = "Golden Retriever";
+myDog.name = "Buddy";
+myDog.age = 3;
+myDog.bark(); // Output: Woof!
+myDog.displayDetails(); // Output: Breed: Golden Retriever, Name: Buddy, Age: 3
+
+
+
+
+
+
+
+
+
+
+Attributes: Data Encapsulation
+- Attributes should ideally be encapsulated, meaning their direct access from outside the class should be restricted.
+- This is achieved using access modifiers like private, protected, and public
+
+public:
+- Attributes declared as public can be accessed from anywhere.
+
+private:
+-  Attributes declared as private can only be accessed from within the same class.
+
+
+
+
+
+
+
+
+Methods: Behavior Implementation
+- Methods contain the logic that defines the behavior of objects.
+- They can take parameters (input) and return values (output).
+
+
+
+
+
+
+
+
+
+
+
+Constructors: Creating and Initializing Objects
+- A constructor is a special method that is called when an object of a class is created
+- It is used to initialize the object's attributes
+- Constructors have the same name as the class and do not have a return type (not even void).
+
+
+Default Constructor:
+- If you don't define a constructor in your class, Java provides a default constructor
+- The default constructor takes no arguments and initializes all attributes to their default values (e.g., 0 for int, null for String).
+
+
+Parameterized Constructor:
+- You can also define your own constructors with parameters to initialize the object's attributes with specific values when the object is created.
+
+
+
+Constructor Overloading:
+- A class can have multiple constructors with different parameters
+- This is called constructor overloading
+- The compiler determines which constructor to call based on the arguments passed when creating the object
