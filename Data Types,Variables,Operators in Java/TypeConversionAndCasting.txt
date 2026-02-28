@@ -1,0 +1,46 @@
+1.Implicit Conversion
+
+- Implicit conversion (also called automatic type casting) happens when a programming language automatically converts one data type into another without you writing any extra code.
+
+It usually happens when:
+- You assign a smaller type to a bigger type
+- No data will be lost
+
+- byte to short, int, long, float, or double
+- short to int, long, float, or double
+- char to int, long, float, or double
+- int to long, float, or double
+- long to float or double
+- float to double
+
+
+
+
+
+
+
+2.Explicit Conversion
+
+- Explicit conversion (also called type casting) is when YOU manually tell the program to convert one data type into another.
+- The compiler does NOT do it automatically.You force it.
+
+Because sometimes conversion is not safe and may cause:
+- Data loss
+- Precision loss
+- Truncation
+
+So the language says:
+- If you really want this, you must write it yourself.
+
+- short to byte or char
+- char to byte or short
+- int to byte, short, or char
+- long to byte, short, char, or int
+- float to byte, short, char, int, or long
+- double to byte, short, char, int, long, or float
+
+
+Potential Data Loss:
+- When casting from a larger data type to a smaller one, you may lose data.
+- For example, when casting a double to an int, the decimal part is truncated.
+- When casting a long to an int, if the long value is outside the range of the int data type, the resulting int value will be different due to overflow.

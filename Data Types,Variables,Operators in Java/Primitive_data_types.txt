@@ -1,0 +1,46 @@
+1-Primitive Data Types in Java
+
+- Primitive data types are the fundamental building blocks for representing data in Java
+- our key primitive data types: int, float, boolean, and char
+
+
+
+    1-Int:
+    - occupies 4 bytes (32 bits) of memory.
+    - -2,147,483,648< int <2,147,483,647
+    - If an int variable is declared but not initialized, its default value is 0.
+    - Be mindful of potential integer overflow or underflow when performing arithmetic operations, especially when dealing with large numbers
+    - If you need to store larger numbers, consider using the long data type
+
+
+
+    2-float:
+    - occupies 4 bytes (32 bits) of memory.
+    - provides approximately 7 decimal digits of precision
+    - If a float variable is declared but not initialized, its default value is 0.0f.
+    - Floating-point literals are double by default.
+    - To specify a float literal, you must append the suffix f or F.
+    - Be aware of the limited precision of float
+    - For applications requiring higher precision, consider using the double data type
+    - Always append the f or F suffix to float literals to avoid compilation errors.
+    - float is commonly used for representing measurements, scientific data, and graphical coordinates.
+
+
+
+    3-Boolean:
+    - can only hold two possible values: true or false
+    - If a boolean variable is declared but not initialized, its default value is false.
+
+
+
+    4-char:
+    - char occupies 2 bytes (16 bits) of memory.
+    - If a char variable is declared but not initialized, its default value is '\u0000' (the null character).
+    - Characters are enclosed in single quotes (')
+    - char is often used in string manipulation and text processing.
+    - Be aware that char represents Unicode characters, so it can handle a wide range of characters from different languages.
+    - You can use Unicode escape sequences (\uXXXX) to represent characters that are not easily typed directly.
+
+
+
+    
